@@ -13,10 +13,10 @@
 
     var date =
         today.getFullYear() +
-        "-0" +
-        (today.getMonth() + 1) +
-        "- " +
-        today.getDate();
+        "-" +
+        (today.getMonth() + 1 > 9 ? today.getMonth() + 1 : '0' + (today.getMonth() + 1)) +
+        "-" +
+        (today.getDate() > 9 ? today.getDate() : '0' + today.getDate());
     var time =
         today.getHours() -
         7 +
